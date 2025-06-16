@@ -1,1 +1,6 @@
-print(f'penis')
+import streamlit as st
+
+st.markdown("""
+    <div>penis<\div>
+"""
+)
