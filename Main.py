@@ -84,7 +84,7 @@ st.write("""
 # Dentro del sidebar (ya lo tienes):
 with st.sidebar:
     st.header("🧭 Navegación") 
-    st.page("pages/1Busqueda_exhaustiva.py", label="🔍 Búsqueda Exhaustiva")
+    st.page_link("pages/1Busqueda_exhaustiva.py", label="🔍 Búsqueda Exhaustiva")
     st.page_link("pages/2FaseDeAcotamiento.py", label="📏 Fase de Acotamiento")
     st.page_link("pages/3Intervalos_Mitad.py", label="✂️ Intervalos por la mitad")
     st.page_link("pages/4Fibonacci.py", label="🔢 Fibonacci")
