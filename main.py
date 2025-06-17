@@ -92,3 +92,8 @@ with st.sidebar:
     st.page_link("pages/7Biseccion.py", label="🪓 Bisección")
     st.page_link("pages/8Secante.py", label="➗ Secante")
 
+
+import streamlit as st
+
+st.title("🔍 Búsqueda Exhaustiva")
+st.write("Aquí se implementará la búsqueda exhaustiva.")
