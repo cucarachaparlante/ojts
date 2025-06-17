@@ -93,6 +93,11 @@ with st.sidebar:
     st.page_link("pages/8Secante.py", label="➗ Secante")
 
 
+cd optimizador-streamlit
+git add pages/2FaseDeAcotamiento.py
+git commit -m "Agregando Fase de Acotamiento como página en Streamlit"
+git push
+
 import math
 import numpy as np
 import matplotlib.pyplot as plt
