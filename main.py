@@ -80,7 +80,7 @@ st.write("""
 **Año:** 2025  
 """)
 
-# ---------------------- Sidebar (NO TOCAR) ----------------------
+# ---------------------- Sidebar ----------------------
 with st.sidebar:
     st.header("🧭 Navegación") 
     st.page_link("pages/1Busqueda_exhaustiva.py", label="🔍 Búsqueda Exhaustiva")
@@ -91,5 +91,4 @@ with st.sidebar:
     st.page_link("pages/6Newton_Raphson.py", label="📉 Newton-Raphson")
     st.page_link("pages/7Biseccion.py", label="🪓 Bisección")
     st.page_link("pages/8Secante.py", label="➗ Secante")
-    # Puedes agregar más páginas si desarrollas más algoritmos
 
