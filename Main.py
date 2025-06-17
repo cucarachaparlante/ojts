@@ -82,4 +82,13 @@ st.write("""
 
 # ---------------------- Sidebar (NO TOCAR) ----------------------
 # Dentro del sidebar (ya lo tienes):
-
+with st.sidebar:
+    st.header("🧭 Navegación") 
+    st.page_link("pages\1Busqueda_exhaustiva.py", label="🔍 Búsqueda Exhaustiva")
+    st.page_link("pages\2FaseDeAcotamiento.py", label="📏 Fase de Acotamiento")
+    st.page_link("pages\3Intervalos_Mitad.py", label="✂️ Intervalos por la mitad")
+    st.page_link("pages\4Fibonacci.py", label="🔢 Fibonacci")
+    st.page_link("pages\5Busqueda_dorada.py", label="🌟 Búsqueda Dorada")
+    st.page_link("pages\6Newton_Raphson.py", label="📉 Newton-Raphson")
+    st.page_link("pages\7Biseccion.py", label="🪓 Bisección")
+    st.page_link("pages\8Secante.py", label="➗ Secante")
