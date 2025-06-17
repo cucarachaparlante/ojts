@@ -46,7 +46,6 @@ st.markdown("""
     Está diseñado especialmente para estudiantes de ingeniería, matemáticas aplicadas e inteligencia artificial.</p>
 </div>
 """, unsafe_allow_html=True)
-
 st.markdown("""
 <p>📌 A lo largo de las páginas podrás:</p>
 <ul>
@@ -81,7 +80,7 @@ st.write("""
 **Año:** 2025  
 """)
 
-# ---------------------- Sidebar ----------------------
+# ---------------------- Sidebar (NO TOCAR) ----------------------
 with st.sidebar:
     st.header("🧭 Navegación") 
     st.page_link("pages/1Busqueda_exhaustiva.py", label="🔍 Búsqueda Exhaustiva")
@@ -92,3 +91,5 @@ with st.sidebar:
     st.page_link("pages/6Newton_Raphson.py", label="📉 Newton-Raphson")
     st.page_link("pages/7Biseccion.py", label="🪓 Bisección")
     st.page_link("pages/8Secante.py", label="➗ Secante")
+    # Puedes agregar más páginas si desarrollas más algoritmos
+
