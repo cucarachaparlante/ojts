@@ -40,14 +40,32 @@ def busqueda_exhaustiva(a: float, b: float, n: int, funcion: callable) -> tuple[
 
 # ---------------------- Configuración Visual ----------------------
 
-st.set_page_config(page_title="🔍 Búsqueda Exhaustiva", layout="centered")
-
 st.markdown("""
     <style>
-    body { background-color: #f0f4f8; }
-    .stApp {
-        background: linear-gradient(to bottom, #e3f2fd, #ffffff);
-    }
+        body {
+            background-color: #f7f9fb;
+            color: #333;
+        }
+        .title-container {
+            text-align: center;
+            padding: 2rem 0 0 0;
+        }
+        .title-text {
+            font-size: 3em;
+            font-weight: bold;
+            color: #205375;
+        }
+        .subtitle-text {
+            font-size: 1.5em;
+            color: #41729F;
+        }
+        .highlight-box {
+            background-color: #eaf2fb;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
     </style>
 """, unsafe_allow_html=True)
 
