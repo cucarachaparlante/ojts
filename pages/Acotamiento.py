@@ -3,15 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 
-
-# Agregar ruta padre al sys.path para que encuentre Acotamiento.py
-import sys
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import Acotamiento as AC
-
-
 def funcion_00(x: float) -> float:
     return x**2 + 3
 
