@@ -80,7 +80,7 @@ Primero, se realiza un <strong>movimiento exploratorio</strong>, en el cual se e
 </p>
 
 <p>
-Si no se detecta mejora en alguna de las fases, el algoritmo reduce el tamaño de los desplazamientos y repite el proceso, afinando progresivamente la búsqueda. Este mecanismo de exploración local y avance por patrones lo hace especialmente útil cuando la función no es diferenciable, es ruidosa o no se dispone de gradientes.
+Si no se detecta mejora en alguna de las fases, el algoritmo reduce el tamaño de los desplazamientos y repite el proceso, afinando progresivamente la búsqueda. Este mecanismo de exploración local y avance por patrones lo hace especialmente útil cuando la función no es diferenciable, es ruidosa o no se dispone de gradientes..
 </p>
 
 <p>
