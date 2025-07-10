@@ -110,7 +110,7 @@ st.markdown("""
 El **método de Hill Climbing** es una técnica de optimización iterativa que mejora una solución actual evaluando pequeñas modificaciones aleatorias en sus alrededores (vecindario).
 
 En cada iteración, se genera un nuevo punto cercano al actual y se compara su valor con el anterior. 
-Si el nuevo punto ofrece una mejor solución (menor valor de la función objetivo), se actualiza la posición; de lo contrario, se conserva el punto actual.
+Si el nuevo punto ofrece una mejor solución (menor valor de la función objetivo), se actualiza la posición; de lo contrario, se conserva el punto actual..
 
 Es un algoritmo simple y eficiente para problemas donde se puede explorar localmente, pero puede quedarse atrapado en óptimos locales si no se aplican técnicas adicionales como reinicios aleatorios o enfriamiento simulado.
 """)
