@@ -2,6 +2,10 @@ import streamlit as st
 import math
 import matplotlib.pyplot as plt
 import numpy as np
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), ".")))
+
 import Acotamiento as AC
 
 # Estilo CSS para el fondo y apariencia
