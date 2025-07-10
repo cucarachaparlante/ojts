@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-# Estilo CSS para el fondo y apariencia
 st.markdown("""
     <style>
     body { background-color: #f9fafb; }
@@ -13,7 +12,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# ------------------- Funciones -------------------
 
 def metodo_newton_raphson(f, x0, epsilon, delta=1e-5, max_iter=100, a=None, b=None):
     puntos = []
@@ -60,7 +58,6 @@ def plot_function_with_points(func, a, b, points, title):
     ax.grid(True)
     return fig
 
-# ------------------- Definición de funciones a usar -------------------
 
 def lata(r): return 2 * math.pi * r * r + (500 / r)
 def caja(l): return -(4 * l**3 - 60 * l**2 + 200 * l)
@@ -78,7 +75,6 @@ functions = {
     'Función 4 (3x^4 - 8x^3 - 6x^2 + 12x)': (funcion_3, 1, -1.5, 3)
 }
 
-# ------------------- Interfaz Streamlit -------------------
 
 st.title("📐 Método de Newton-Raphson")
 
