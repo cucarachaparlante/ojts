@@ -129,7 +129,7 @@ A diferencia de otros métodos, permite aceptar soluciones peores de manera cont
 Esta aceptación se regula mediante una **"temperatura"** que disminuye gradualmente con el tiempo.
 
 Cuando la temperatura es alta, hay mayor probabilidad de aceptar soluciones peores; a medida que la temperatura disminuye, el algoritmo se vuelve más estricto.  
-Es especialmente útil en espacios de búsqueda complejos donde abundan los mínimos locales.
+Es especialmente útil en espacios de búsqueda complejos donde abundan los mínimos locales..
 """)
 
 
