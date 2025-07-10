@@ -2,9 +2,8 @@ import streamlit as st
 import math
 import matplotlib.pyplot as plt
 import numpy as np
-import Acotamiento as AC  # Asegúrate que este archivo esté en el mismo directorio
+import Acotamiento as AC  
 
-# Estilo CSS para el fondo y apariencia
 st.markdown("""
     <style>
     body { background-color: #f9fafb; }
@@ -14,7 +13,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Funciones auxiliares
 
 def calcular_derivada(x, delta, funcion):
     return (funcion(x + delta) - funcion(x - delta)) / (2 * delta)
@@ -55,7 +53,6 @@ def plot_function_with_points(funcion, a, b, puntos, titulo):
     ax.grid(True)
     return fig
 
-# ---------------- Funciones a optimizar ----------------
 
 def lata(r): return 2 * math.pi * r * r + (500 / r)
 def caja(l): return -(4 * l**3 - 60 * l**2 + 200 * l)
@@ -73,7 +70,6 @@ functions = {
     'Función 4 (3x^4 - 8x^3 - 6x^2 + 12x)': (funcion_3, -1.5, 3)
 }
 
-# ---------------- Interfaz Streamlit ----------------
 
 st.title("⚖️ Método de Bisección para Encontrar Mínimos")
 
@@ -85,7 +81,6 @@ fin = st.number_input("Intervalo fin (b)", value=float(fin_default))
 epsilon = st.number_input("Precisión (ε)", min_value=0.000001, max_value=0.1, value=0.001, step=0.000001, format="%.6f")
 
 if st.button("▶️ Ejecutar Método de Bisección"):
-    # Usamos fase de acotamiento para reducir intervalo
     a, b = AC.fase_acotamiento(inicio, fin, 0.1, funcion=funcion)
     
     minimo, puntos = Biseccion(a, b, epsilon, funcion)
