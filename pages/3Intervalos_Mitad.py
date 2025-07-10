@@ -3,11 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-# ---------------------- Funciones ----------------------
 
 def interval_halving_method(func, a, b, epsilon):
     points = []
-    intervalos = []   # Para almacenar los intervalos visitados
+    intervalos = []   
     while (b - a) > epsilon:
         xm = (a + b) / 2
         L = b - a
@@ -68,7 +67,6 @@ def funcion_2(x):
 def funcion_3(x):
     return 3*x**4 - 8*x**3 - 6*x**2 + 12*x
 
-# ---------------------- Streamlit ----------------------
 
 st.set_page_config(page_title="🔍 Método de Interval Halving", layout="centered")
 
@@ -102,7 +100,6 @@ b = st.number_input("🔼 Límite superior", value=float(default_b))
 epsilon = st.number_input("⚠️ Precisión (ε)", min_value=0.0001, max_value=1.0, value=0.01, step=0.0001, format="%.4f")
 
 if st.button("🚀 Ejecutar Método"):
-    # Validación para división por cero o inputs inválidos
     if opcion_funcion == 'Función 1 (x² + 54/x)' and (a <= 0 <= b):
         st.error("❌ El intervalo no puede incluir x=0 para esta función debido a división por cero.")
     else:
