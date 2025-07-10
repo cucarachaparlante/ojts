@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 
-# --- FUNCIONES DISPONIBLES ---
 
 def funcion_00(x: float) -> float:
     return x**2 + 3
@@ -26,7 +25,6 @@ def funcion_2(x: float) -> float:
 def funcion_3(x: float) -> float:
     return 3 * x**4 - 8 * x**3 - 6 * x**2 + 12 * x
 
-# --- FASE DE ACOTAMIENTO ---
 
 def fase_acotamiento(x0, delta, lambda_, funcion, max_iter=1000, max_x=1e6):
     x1 = x0
@@ -50,7 +48,6 @@ def fase_acotamiento(x0, delta, lambda_, funcion, max_iter=1000, max_x=1e6):
 
     return min(x1, x2), max(x1, x2)
 
-# --- INTERFAZ STREAMLIT ---
 def main():
     st.title("Fase de acotamiento 🤖")
     st.markdown("""
@@ -94,7 +91,6 @@ def main():
         intervalo = fase_acotamiento(x0, delta, lambda_, funcion_seleccionada)
         st.success(f"Intervalo encontrado: [{intervalo[0]:.4f}, {intervalo[1]:.4f}]")
 
-        # Mostrar gráfica de evolución
         x_vals = np.linspace(intervalo[0], intervalo[1], 100)
         y_vals = [funcion_seleccionada(x) for x in x_vals]
         fig, ax = plt.subplots()
@@ -105,6 +101,5 @@ def main():
         ax.grid(True)
         st.pyplot(fig)
 
-# --- SOLO EJECUTA LA INTERFAZ SI SE LLAMA DIRECTAMENTE ---
 if __name__ == "__main__":
     main()
