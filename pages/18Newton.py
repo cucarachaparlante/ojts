@@ -130,7 +130,7 @@ st.title("🔎 Método de Newton")
 st.markdown(r"""
 El **método de Newton** es una técnica de optimización basada en el uso de derivadas, que busca encontrar mínimos locales de una función de manera rápida y precisa.
 
-Este método utiliza tanto la primera como la segunda derivada de la función para calcular la dirección y el tamaño del paso hacia el mínimo.  
+Este método utiliza tanto la primera como la segunda derivada de la función para calcular la dirección y el tamaño del paso hacia el mínimo..  
 En cada iteración, se aplica la fórmula:
 
 $$
