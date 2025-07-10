@@ -8,7 +8,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), ".")))
 
 import Acotamiento as AC
 
-# Estilo CSS para el fondo y apariencia
 st.markdown("""
     <style>
     body { background-color: #f9fafb; }
@@ -31,7 +30,7 @@ def Secante(a, b, epsilon, funcion, delta=0.01):
     while abs(b - a) > epsilon:
         if fb - fa == 0:
             st.warning("División entre cero en método de la secante. Deteniendo.")
-            break  # Evitar división por cero
+            break  
 
         x_new = b - fb * (b - a) / (fb - fa)
 
@@ -65,7 +64,6 @@ def plot_function_with_points(funcion, a, b, puntos, titulo):
     ax.grid(True)
     return fig
 
-# ---------------- Funciones a optimizar ----------------
 
 def lata(r): return 2 * math.pi * r * r + (500 / r)
 def caja(l): return -(4 * l**3 - 60 * l**2 + 200 * l)
@@ -83,7 +81,6 @@ functions = {
     'Función 4 (3x^4 - 8x^3 - 6x^2 + 12x)': (funcion_3, -1.5, 3)
 }
 
-# ---------------- Interfaz Streamlit ----------------
 
 st.title("⚖️ Método de la Secante para Encontrar Mínimos")
 
