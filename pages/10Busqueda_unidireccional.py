@@ -38,7 +38,7 @@ import matplotlib.pyplot as plt
 st.subheader("🧪 Ejemplo interactivo")
 
 def funcion(x):
-    return (x - 2)**2 + 1  # Mínimo en x = 2
+    return (x - 2)**2 + 1  
 
 a = st.number_input("Límite inferior (a)", value=0.0)
 b = st.number_input("Límite superior (b)", value=5.0)
