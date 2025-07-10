@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-# ---------------------- Funciones definidas ----------------------
 
 def lata(r):
     return 2 * math.pi * r * r + (500 / r)
@@ -86,7 +85,6 @@ def plot_function_with_points(func, a, b, points, title):
     ax.grid(True)
     return fig
 
-# ---------------------- Interfaz con Streamlit ----------------------
 
 st.set_page_config(page_title="🔍 Método de Búsqueda de Fibonacci", layout="centered")
 
