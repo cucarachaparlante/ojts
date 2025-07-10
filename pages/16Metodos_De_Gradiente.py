@@ -18,7 +18,7 @@ Los <strong>métodos de optimización basados en gradiente</strong> son técnica
 </p>
 
 <p>
-Estos métodos parten de un punto inicial y se mueven iterativamente en la dirección opuesta al gradiente, ya que este indica el sentido de mayor incremento de la función. Al avanzar en sentido contrario, se busca minimizar la función.
+Estos métodos parten de un punto inicial y se mueven iterativamente en la dirección opuesta al gradiente, ya que este indica el sentido de mayor incremento de la función. Al avanzar en sentido contrario, se busca minimizar la función..
 </p>
 
 <p>
