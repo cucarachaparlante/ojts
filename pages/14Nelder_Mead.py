@@ -53,7 +53,7 @@ st.title("🔻 Optimización con el Método Nelder-Mead")
 st.markdown("""
 <div style="text-align: justify; font-size: 16px; line-height: 1.6em; color: #333333;">
 <p>
-El <strong>método de Nelder-Mead</strong>, también conocido como <em>simplex de búsqueda</em>, es una técnica de optimización que no requiere derivadas ni información del gradiente. A diferencia de otros métodos, su estrategia consiste en manipular un conjunto de puntos en el espacio —denominado <strong>simplex</strong>— para explorar progresivamente el entorno y encontrar un mínimo local de una función objetivo.
+El <strong>método de Nelder-Mead</strong>, también conocido como <em>simplex de búsqueda</em>, es una técnica de optimización que no requiere derivadas ni información del gradiente. A diferencia de otros métodos, su estrategia consiste en manipular un conjunto de puntos en el espacio —denominado <strong>simplex</strong>— para explorar progresivamente el entorno y encontrar un mínimo local de una función objetivo..
 </p>
 
 <p>
