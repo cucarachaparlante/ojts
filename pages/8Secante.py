@@ -2,8 +2,7 @@ import streamlit as st
 import math
 import matplotlib.pyplot as plt
 import numpy as np
-sys.path.append(os.path.dirname(__file__))
-import Acotamiento as AC  # Asegúrate que esté en la misma carpeta
+import Acotamiento as AC
 
 # Estilo CSS para el fondo y apariencia
 st.markdown("""
