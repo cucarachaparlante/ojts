@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-# ------------------- Funciones -------------------
 
 def lata(r):
     return 2 * math.pi * r * r + (500 / r)
@@ -24,15 +23,15 @@ def funcion_3(x):
     return 3*x**4 - 8*x**3 - 6*x**2 + 12*x
 
 def golden_section_search(a: float, b: float, epsilon: float, func: callable):
-    phi = (1 + np.sqrt(5)) / 2  # Número áureo ≈ 1.618
-    resphi = 2 - phi            # ≈ 0.618
+    phi = (1 + np.sqrt(5)) / 2 
+    resphi = 2 - phi            
 
     c = a + resphi * (b - a)
     d = b - resphi * (b - a)
     fc = func(c)
     fd = func(d)
     
-    points = [(c, fc), (d, fd)]  # Puntos evaluados
+    points = [(c, fc), (d, fd)]  
     min_intervalo = (a, b)
 
     while abs(b - a) > epsilon:
@@ -69,7 +68,6 @@ def plot_function_with_points(func, a, b, points, title):
     ax.grid(True)
     return fig
 
-# ------------------- Streamlit UI -------------------
 
 st.set_page_config(page_title="🔆 Golden Section Search", layout="centered")
 
@@ -102,7 +100,6 @@ b = st.number_input("🔼 Límite superior (b)", value=float(default_b))
 epsilon = st.number_input("⚠️ Precisión (ε)", min_value=0.0001, max_value=1.0, value=0.01, step=0.0001, format="%.4f")
 
 if st.button("▶️ Ejecutar Búsqueda"):
-    # Validación especial para división por cero
     if funcion_nombre == 'Función 1 (x² + 54/x)' and (a <= 0 <= b):
         st.error("❌ El intervalo no puede incluir x=0 para esta función (división por cero).")
     else:
