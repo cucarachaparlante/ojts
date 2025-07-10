@@ -10,7 +10,6 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-# 🎯 Funciones objetivo
 def rastrigin(x):
     A = 10
     return A * len(x) + sum(xi**2 - A * np.cos(2 * np.pi * xi) for xi in x)
