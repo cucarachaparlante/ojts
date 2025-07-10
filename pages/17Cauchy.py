@@ -121,7 +121,7 @@ st.title("📉 Método de Cauchy")
 st.markdown("""
 El **método de Cauchy**, también conocido como **descenso por gradiente**, es una técnica de optimización basada en derivadas que busca minimizar una función moviéndose en la dirección opuesta al gradiente.
 
-En cada iteración, se calcula el gradiente de la función en el punto actual y se da un paso en la dirección negativa de este gradiente.  
+En cada iteración, se calcula el gradiente de la función en el punto actual y se da un paso en la dirección negativa de este gradiente..  
 El tamaño del paso puede ser fijo o determinarse mediante una búsqueda de línea.
 
 Es un método simple y ampliamente utilizado, especialmente en problemas de optimización diferenciable, aunque puede requerir ajustes en la tasa de aprendizaje para garantizar la convergencia.
