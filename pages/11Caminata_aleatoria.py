@@ -94,7 +94,7 @@ class BuscadorAleatorio:
 st.title("🎲 Búsqueda Aleatoria (Random Walk)")
 
 st.markdown("""
-La **búsqueda aleatoria**, también conocida como **random walk**, es una técnica de optimización que explora el espacio de soluciones mediante movimientos aleatorios.
+La **búsqueda aleatoria**, también conocida como **random walk**, es una técnica de optimización que explora el espacio de soluciones mediante movimientos aleatorios..
 
 A partir de un punto inicial, se generan nuevos puntos cercanos de forma aleatoria y se aceptan aquellos que mejoran el valor de la función objetivo. 
 Este proceso se repite durante un número definido de iteraciones o hasta alcanzar una condición de parada.
