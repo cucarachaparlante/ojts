@@ -1,6 +1,5 @@
 import streamlit as st
 
-# ---------------------- Estilo personalizado ----------------------
 st.markdown("""
     <style>
         body {
@@ -30,7 +29,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# ---------------------- Título ----------------------
 st.markdown("""
     <div class="title-container">
         <div class="title-text">🚀 Explorador de Métodos de Optimización</div>
@@ -38,7 +36,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# ---------------------- Sección destacada ----------------------
 st.markdown("""
 <div class="highlight-box">
     <h3>🔎 ¿Qué es esta aplicación?</h3>
@@ -55,14 +52,13 @@ st.markdown("""
 </ul>
 """, unsafe_allow_html=True)
 
-# ---------------------- Filosofía del proyecto ----------------------
 st.markdown("## 🎯 Filosofía del proyecto")
 st.info("""
 Esta plataforma nació del deseo de hacer más accesible el aprendizaje de algoritmos matemáticos. 
 Cada método aquí presentado no es solo un bloque de código, sino una historia visual de cómo resolver problemas reales.
 """)
 
-# ---------------------- Características ----------------------
+
 st.markdown("## 🔧 Funcionalidades principales")
 st.success("""
 ✅ Interfaz limpia y accesible  
@@ -72,7 +68,6 @@ st.success("""
 ✅ Basado en Python y Streamlit
 """)
 
-# ---------------------- Créditos ----------------------
 st.markdown("## 👥 Créditos")
 st.write("""
 **Autor:** Carlos Einar Vidaña Huesca [Proyecto de Optimización]  \n
@@ -80,17 +75,24 @@ st.write("""
 **Año:** 2025  
 """)
 
-# ---------------------- Sidebar (NO TOCAR) ----------------------
-# Dentro del sidebar (ya lo tienes):
 with st.sidebar:
     st.header("🧭 Navegación") 
-    st.page_link("pages/busqueda_exhaustiva.py", label="Busqueda Exhaustiva")
-    
-    st.page_link("/pages/1Busqueda_exhaustiva.py", label="🔍 Búsqueda Exhaustiva")
+    st.page_link("pages/1Busqueda_exhaustiva.py", label="🔍 Búsqueda Exhaustiva")
     st.page_link("pages/2FaseDeAcotamiento.py", label="📏 Fase de Acotamiento")
-    st.page_link("pages/3Intervalos_Mitad.py", label="✂️ Intervalos por la mitad")
-    st.page_link("pages/4Fibonacci.py", label="🔢 Fibonacci")
-    st.page_link("pages/5Busqueda_dorada.py", label="🌟 Búsqueda Dorada")
-    st.page_link("pages/6Newton_Raphson.py", label="📉 Newton-Raphson")
-    st.page_link("pages/7Biseccion.py", label="🪓 Bisección")
-    st.page_link("pages/8Secante.py", label="➗ Secante")
+    st.page_link("pages/3Eliminacion_De_Regiones.py", label="🗂️ Métodos de eliminación de regiones")
+    st.page_link("pages/4Intervalos_Mitad.py", label="✂️ Intervalos por la mitad")
+    st.page_link("pages/5Fibonacci.py", label="🔢 Fibonacci")
+    st.page_link("pages/6Busqueda_dorada.py", label="🌟 Búsqueda Dorada")
+    st.page_link("pages/7Newton_Raphson.py", label="📉 Newton-Raphson")
+    st.page_link("pages/8Biseccion.py", label="🪓 Bisección")
+    st.page_link("pages/9Secante.py", label="➗ Secante")
+    st.page_link("pages/10Busqueda_unidireccional.py", label="🚶‍♂️ Búsqueda unidireccional")
+    st.page_link("pages/11Caminata_aleatoria.py", label="🚶 Caminata aleatoria")
+    st.page_link("pages/12Hill_Climbing.py", label="⛰️ Hill Climbing")
+    st.page_link("pages/13Simulated_annealling.py", label="🔥 Recocido Simulado")
+    st.page_link("pages/14Nelder_Mead.py", label="🔺 Nelder-Mead")
+    st.page_link("pages/15Hooke_Jeeves.py", label="🧭 Hooke Jeeves")
+    st.page_link("pages/16Metodos_De_Gradiente.py", label="📈 Métodos basados en gradiente")
+    st.page_link("pages/17Cauchy.py", label="🎯 Método de Cauchy")
+    st.page_link("pages/18Newton.py", label="⚙️ Método de Newton")
+
