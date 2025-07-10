@@ -3,8 +3,6 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-# ---------------------- Funciones Objetivo ----------------------
-
 
 def lata(r: float) -> float:
     return 2 * math.pi * r * r + (500 / r)
@@ -26,11 +24,9 @@ def funcion_2(x: float) -> float:
 def funcion_3(x: float) -> float:
     return 3*x**4 - 8*x**3 - 6*x**2 + 12*x
 
-# ---------------------- Método Fase de Acotamiento ----------------------
 
 def fase_acotamiento(x0: float, delta: float, lambda_: float, funcion: callable, max_iter=1000, max_x=1e6):
     x1 = x0
-    # Elegir dirección del paso según mejora
     x2 = x1 + delta if funcion(x1 + delta) < funcion(x1) else x1 - delta
     k = 1
     
@@ -43,7 +39,6 @@ def fase_acotamiento(x0: float, delta: float, lambda_: float, funcion: callable,
         
         x1 = x2
         delta *= lambda_
-        # Elegir el nuevo punto según la dirección del paso previo
         if x2 > x0:
             x2 = x1 + delta
         else:
@@ -55,7 +50,6 @@ def fase_acotamiento(x0: float, delta: float, lambda_: float, funcion: callable,
     
     return (min(x1, x2), max(x1, x2)), valores_x, valores_y
 
-# ---------------------- Streamlit UI ----------------------
 
 st.set_page_config(page_title="📈 Fase de Acotamiento", layout="centered")
 
@@ -88,14 +82,12 @@ delta = st.number_input("↔ Paso inicial (delta)", value=0.1, min_value=0.0001,
 lambda_ = st.number_input("⏫ Factor de crecimiento (lambda)", value=2.0, min_value=1.1, format="%.2f")
 
 if st.button("🚀 Ejecutar Fase de Acotamiento"):
-    # Validación para evitar división por cero o valores inválidos
     if opcion_funcion == "f(x) = x² + 54/x" and x0 == 0:
         st.error("❌ El punto inicial x0 no puede ser 0 para esta función (división por cero).")
     else:
         intervalo, valores_x, valores_y = fase_acotamiento(x0, delta, lambda_, funcion)
         st.success(f"✅ Intervalo estimado con mínimo local: {intervalo}")
 
-        # Graficar
         fig, ax = plt.subplots()
         ax.plot(valores_x, valores_y, 'bo-', label="Puntos evaluados")
         ax.set_xlabel("x")
