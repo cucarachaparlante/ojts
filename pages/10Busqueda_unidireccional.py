@@ -14,7 +14,7 @@ st.markdown("""
 
 <div class="justify">
 <p>
-La <strong>búsqueda unidireccional</strong> es una técnica utilizada para optimizar funciones que dependen de varias variables, pero enfocándose únicamente en una dirección específica. En lugar de explorar todas las variables al mismo tiempo, este método reduce el problema a buscar el mejor valor a lo largo de una sola línea o camino determinado.
+La <strong>búsqueda unidireccional</strong> es una técnica utilizada para optimizar funciones que dependen de varias variables, pero enfocándose únicamente en una dirección específica. En lugar de explorar todas las variables al mismo tiempo, este método reduce el problema a buscar el mejor valor a lo largo de una sola línea o camino determinado..
 </p>
 
 <p>
