@@ -3,8 +3,6 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-# ---------------------- Funciones Objetivo ----------------------
-
 def lata(r: float) -> float:
     return 2 * math.pi * r * r + (500 / r)
 
@@ -23,7 +21,6 @@ def funcion_2(x: float) -> float:
 def funcion_3(x: float) -> float:
     return 3*x**4 - 8*x**3 - 6*x**2 + 12*x
 
-# ---------------------- Búsqueda Exhaustiva ----------------------
 
 def busqueda_exhaustiva(a: float, b: float, n: int, funcion: callable) -> tuple[float, float]:
     delta_x = (b - a) / n
@@ -38,7 +35,6 @@ def busqueda_exhaustiva(a: float, b: float, n: int, funcion: callable) -> tuple[
 
     return (x1, x3)
 
-# ---------------------- Configuración Visual ----------------------
 
 st.markdown("""
     <style>
@@ -72,7 +68,6 @@ st.markdown("""
 st.title("🔍 Búsqueda Exhaustiva con Streamlit")
 st.markdown("Explora el comportamiento de diferentes funciones y encuentra intervalos de mínimo local usando el **método de búsqueda exhaustiva**.")
 
-# ---------------------- Interfaz ----------------------
 
 funciones = {
     "Área de una lata (lata)": lata,
@@ -92,7 +87,6 @@ n = st.slider("📊 Número de particiones", min_value=10, max_value=500, value=
 
 if st.button("🚀 Ejecutar Búsqueda Exhaustiva"):
 
-    # Validación para evitar división por cero
     if (opcion_funcion in ["Área de una lata (lata)", "f(x) = x² + 54/x"]) and a <= 0:
         st.error("❌ El límite inferior debe ser mayor que 0 para esta función (evita división por cero).")
     else:
@@ -104,7 +98,6 @@ if st.button("🚀 Ejecutar Búsqueda Exhaustiva"):
             st.success(f"✅ Intervalo encontrado: {intervalo}")
             st.info(f"📍 Aproximación del mínimo local:\n\n**x = {x_min:.4f}**, **f(x) = {y_min:.4f}**")
 
-            # Visualización con punto en el mínimo
             x_vals = np.linspace(a, b, 1000)
             y_vals = [funcion(x) for x in x_vals]
 
